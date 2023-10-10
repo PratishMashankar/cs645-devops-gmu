@@ -1,0 +1,117 @@
+<!--
+Name: Pratish Mashankar
+G#: G01354094
+This webpage is inspired from https://www.w3docs.com/learn-html/html-form-templates.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Survey Form</title>
+		<link rel="stylesheet" href="student_survey_form_test2.css" />
+	</head>
+	<body>
+		<div class="main-block">
+			<form action="/">
+				<h1>Student Survey Form</h1>
+				<fieldset>
+					<legend>
+						<h3>Personal Details</h3>
+					</legend>
+					<div  class="account-details">
+						<div><label>First Name*</label><input type="text" name="name" required></div>
+						<div><label>Last Name*</label><input type="text" name="name" required></div>
+						<div><label>Street Address*</label><input type="text" name="name" height='20' required></div>
+						<div><label>City*</label><input type="text" name="name" required></div>
+						<div><label>State*</label><input type="text" name="name" required></div>
+						<div><label>Zip*</label><input type="text" name="name" required></div>
+						<div><label>Email*</label><input type="email" name="name" required></div>
+						<div><label>Date of Survey*</label><input type="date" name="name" required></div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>What do you like the most about the college?</h3>
+					</legend>
+					<div  class="account-details">
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox"><span>Students</span>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox"><span>Location</span>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox"><span>Campus</span>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox"><span>Atmosphere</span>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox"><span>Dorm Rooms</span>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox"><span>Sports</span>
+						</div>
+						<div>
+						</fieldset>
+						<fieldset>
+							<legend>
+								<h3>How did you become interested in the University*?</h3>
+							</legend>
+							<div class="interest">
+								
+								<input type="radio" value="none" id="friends" name="interest" required/>
+								<label for="friends" class="radio">Friends</label>
+								
+								<input type="radio" value="none" id="television" name="interest" required/>
+								<label for="television" class="radio">Television</label>
+								
+								<input type="radio" value="none" id="internet" name="interest" required/>
+								<label for="internet" class="radio">Internet</label>
+								<input type="radio" value="none" id="other" name="interest" required/>
+								<label for="other" class="radio">Other</label>
+								
+								<div>
+								</fieldset>
+								<fieldset>
+									<legend>
+										<h3>How likely are you to recommend the University?</h3>
+									</legend>
+									<div class="likely">
+										<label>Likeness</label>
+										<select required>
+											<option value=""></option>
+											<option value="Very Likely">Very Likely</option>
+											<option value="Likely">Likely</option>
+											<option value="Unlikely">Unlikely</option>
+										</select>
+									</div>
+									
+								</fieldset>
+								<fieldset>
+									<legend>
+										<h3>Raffle</h3>
+									</legend>
+									<div class="interest">
+										<label>Enter ten comma separated numbers ranging from 1 through 100 to get a chance to win a free movie ticket. </label><br><br>
+										<textarea name="name" rows="4" cols="50" placeholder= "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"></textarea>
+									</div>
+									
+								</fieldset>
+								<fieldset>
+									<legend>
+										<h3>Additional Comments</h3>
+									</legend>
+									<div class="interest">
+										<label>Anything you would like to share with us? </label><br><br>
+										<textarea name="name" rows="4" cols="50" placeholder= "Limit 2-3 lines" ></textarea>
+									</div>
+									
+								</fieldset>
+								<fieldset>
+									<button type='button'>Submit</button>
+									<button type='reset'>Cancel</button>
+								</fieldset>
+								
+							</form>
+						</div>
+					</body>
+				</html>

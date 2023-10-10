@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+html, body {
+  min-height: 100%;
+}
+
+body, div, form, input, select, p {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #333; /* Changed text color */
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  color: #8ebf42; /* Changed heading color */
+}
+
+h3 {
+  margin: 12px 0;
+  color: #8ebf42;
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5; /* Changed background color */
+  min-height: 100vh;
+}
+
+form {
+  width: 100%;
+  max-width: 600px; /* Added max-width to center the form */
+  padding: 20px;
+  background: #fff; /* Added background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  border-radius: 5px; /* Added border radius */
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid #8ebf42;
+  margin-bottom: 20px; /* Added spacing between fieldsets */
+}
+
+.account-details > div {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  margin-bottom: 15px; /* Added spacing between fields */
+}
+
+.account-details > div input {
+  width: 48%; /* Adjusted input and label width */
+  margin: 0; /* Removed margin to align input and label */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.account-details > div label {
+  width: 48%; /* Adjusted input and label width */
+  margin: 0; /* Removed margin to align input and label */
+
+}
+
+/* Style the select element and arrow */
+select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin: 20px auto 10px;
+  border: none;
+  background: #8ebf42;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #82b534;
+}
+
+@media (min-width: 568px) {
+  .account-details > div {
+    width: 48%;
+    margin-right: 2%;
+  }
+
+  label {
+    width: 45%;
+    text-align: right;
+  }
+
+  input {
+    width: 50%;
+  }
+
+  select,
+  .interest,
+  .likely {
+    width: 50%;
+  }
+}
