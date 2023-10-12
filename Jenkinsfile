@@ -42,7 +42,8 @@ pipeline {
       stage('Deploying Rancher to single node') {
          steps {
             script{
-               sh 'kubectl set image deployment/cs645-hw2 container-0=mythprat/swe645hw2:'+tag
+                def kubeconfigPath = '/home/ubuntu/.kube/config.yaml'
+                sh 'kubectl --kubeconfig=${kubeconfigPath} set image deployment/cs645-hw2 container-0=mythprat/swe645hw2:'+tag
             }
          }
       }
