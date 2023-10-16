@@ -11,7 +11,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9.5' // Replace with the desired Maven version
+        maven 'Maven' // Replace with the desired Maven version
     }
 
     stages{
