@@ -10,11 +10,16 @@ pipeline {
     }
     agent any
 
+    tools {
+        maven 'Maven-3.9.5' // Replace with the desired Maven version
+    }
+
     stages{
 
         stage('Build') {
             steps {
                 script {
+                    sh 'mvn clean install'
                     sh 'mvn clean package'
                     sh 'echo ${BUILD_TIMESTAMP}'
                     tag = generateTag()
