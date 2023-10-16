@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // sh 'mvn clean install'
+                    sh 'mvn clean install'
                     sh 'mvn clean package'
                     sh 'echo ${BUILD_TIMESTAMP}'
                     tag = generateTag()
