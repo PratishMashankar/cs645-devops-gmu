@@ -21,6 +21,7 @@ pipeline {
                 script {
                     sh 'mvn clean install'
                     sh 'mvn clean package'
+                    sh 'mvn war:war'
                     sh 'echo ${BUILD_TIMESTAMP}'
                     tag = generateTag()
                     docker.withRegistry('',registryCredential){
