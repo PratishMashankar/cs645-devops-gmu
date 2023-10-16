@@ -19,9 +19,15 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'mvn clean install'
-                    sh 'mvn clean package'
-                    sh 'mvn war:war'
+                    // sh 'mvn clean install'
+                    // sh 'mvn clean package'
+                    // sh 'mvn war:war'
+                    checkout scm
+                    sh 'rm -rf *.war'
+                    sh 'jar -cvf student_survey-1.war -C src/main/webapp/ .'
+
+
+
                     sh 'echo ${BUILD_TIMESTAMP}'
                     tag = generateTag()
                     docker.withRegistry('',registryCredential){
